@@ -364,3 +364,46 @@ textarea { resize: vertical; min-height: 80px; }
 .text-muted { color: #6b7280; }
 .mt-1 { margin-top: 0.25rem; }
 .gap-items { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+
+/* ── Template button ── */
+.template-btn-wrap {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0.35rem;
+}
+.template-dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  z-index: 200;
+  background: white;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  min-width: 280px;
+  max-width: 420px;
+  overflow: hidden;
+}
+.template-option {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  width: 100%;
+  padding: 0.6rem 0.85rem;
+  text-align: left;
+  background: white;
+  border: none;
+  border-bottom: 1px solid #f3f4f6;
+  cursor: pointer;
+  transition: background 0.12s;
+}
+.template-option:last-child { border-bottom: none; }
+.template-option:hover { background: #eff6ff; }
+.template-option-label { font-size: 0.8rem; font-weight: 600; color: #1e40af; }
+.template-option-preview {
+  font-size: 0.73rem;
+  color: #6b7280;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
